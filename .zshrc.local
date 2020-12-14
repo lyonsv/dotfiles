@@ -1,8 +1,6 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 export ANDROID_SDK=/Users/vincentlyons/Library/Android/sdk
 
-eval "$(rbenv init -)"
-
 plugins=(
   zsh-syntax-highlighting
 )
