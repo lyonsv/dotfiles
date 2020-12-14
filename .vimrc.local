@@ -1,0 +1,12 @@
+augroup ale
+  autocmd!
+
+  let g:ale_fixers = {
+        \'*': ['eslint', 'prettier'],
+        \'html': ['remove_trailing_lines', 'trim_whitespace'],
+        \'javascript': ['eslint', 'prettier'],
+        \'typescript': ['eslint', 'prettier']}
+  let g:ale_fix_on_save = 1
+augroup END
+
+colorscheme gruvbox
