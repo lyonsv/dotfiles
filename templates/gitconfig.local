@@ -1,0 +1,5 @@
+# ~/.gitconfig.local — machine-specific git config. NOT tracked in git.
+# e.g. use a work email on a work machine:
+#
+# [user]
+#   email = you@work.example

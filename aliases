@@ -1,0 +1,40 @@
+# Unix
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Bundler / Rails
+alias b="bundle"
+alias be="bundle exec"
+alias s="bundle exec rails s"
+alias migrate="bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare"
+
+# JS
+alias yd="yarn dev"
+
+# Git
+alias gs="git status"
+alias gc="git add -A && git commit -m"
+alias gp="git push"
+
+# Claude Code
+alias cc="claude --dangerously-skip-permissions"
+
+# macOS
+alias chrome='open -a "Google Chrome"'
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# Easier navigation: ..., ...., ....., and -
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
+
+# Include custom aliases
+if [[ -f ~/.aliases.local ]]; then
+  source ~/.aliases.local
+fi
